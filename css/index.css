@@ -623,23 +623,7 @@ body::after {
   position: fixed;
   height: 100vh;
   z-index: -2;
-  background: url("/images/bdbj.jpeg") no-repeat center/cover;
-}
-body::before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  height: 100vh;
-  z-index: -1;
-  background-color: rgba(0,0,0,0.2);
-}
-.nightmode body::before {
-  background-color: rgba(0,0,0,0.6);
+  background: url("") no-repeat center/cover;
 }
 .container {
   white-space: normal;
@@ -757,7 +741,7 @@ body::before {
   width: 100%;
   font-size: 18px;
   background-color: #2d2e30;
-  height: 100vh;
+  height: 80vh;
 }
 .header-inner--bgcolor {
   background-color: #333;
@@ -935,7 +919,7 @@ body::before {
   z-index: -1;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.1);
+  background-color: rgba(0,0,0,0.2);
 }
 .header-banner-info {
   position: absolute;
@@ -1322,6 +1306,7 @@ body::before {
   opacity: 1;
   -ms-filter: none;
   filter: none;
+  border-radius: 50%;
 }
 .sidebar-ov-author__avatar:hover .sidebar-ov-author__avatar_img {
   -webkit-animation: avatar-turn 0.8s both ease-out;
@@ -2383,6 +2368,7 @@ body::before {
 }
 .gallery img {
   margin-bottom: 10px;
+  width: 220px;
 }
 .exturl__icon {
   margin: 0 0.1em 0 0.3em;
@@ -2802,6 +2788,9 @@ body::before {
   .post-list .post {
     margin: 0 0 0.8rem;
     padding: 0.8rem;
+  }
+  .gallery img {
+    width: 100%;
   }
   .friends-plugin__item {
     margin: 0;
